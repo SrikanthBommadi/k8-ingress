@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: app1
-        image: srikanth9959/app1
+        image: srikanth9959/app1:tagname
         ports: 
         - containerPort: 80
 ---
