@@ -47,7 +47,7 @@ metadata:
     alb.ingress.kubernetes.io/target-type: ip
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTPS": 443}]'
     alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:010526266250:certificate/0b61452e-2bff-477a-a78f-e7640c3d1520
-    alb.ingress.kubernetes.io/groupname: srikanthreddy
+    alb.ingress.kubernetes.io/group.name: srikanthreddy
 spec:
   ingressClassName: alb
   rules:
