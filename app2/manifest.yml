@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: app2
-        image: ## after build give
+        image: srikanth9959/app2
         ports: 
         - containerPort: 80
 ---
@@ -46,12 +46,12 @@ metadata:
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTPS": 443}]'
-    alb.ingress.kubernetes.io/certificate-arn: ## create the certificate arn
+    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:010526266250:certificate/0b61452e-2bff-477a-a78f-e7640c3d1520
     alb.ingress.kubernetes.io/group:name: srikanthreddy
 spec:
   ingressClassName: alb
   rules:
-    - host: "app2." ##girv the domain
+    - host: "app2.srikanthaws.fun" 
       http:
         paths:
         - pathType: Prefix
